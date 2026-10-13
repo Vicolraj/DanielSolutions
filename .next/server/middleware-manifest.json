@@ -1,0 +1,40 @@
+{
+  "version": 3,
+  "middleware": {
+    "/": {
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/middleware.js"
+      ],
+      "name": "middleware",
+      "page": "/",
+      "matchers": [
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/admin(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\.json|\\.rsc|\\.segments\\/.+\\.segment\\.rsc)?[\\/#\\?]?$",
+          "originalSource": "/admin/:path*"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/api\\/admin(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(\\.json|\\.rsc|\\.segments\\/.+\\.segment\\.rsc)?[\\/#\\?]?$",
+          "originalSource": "/api/admin/:path*"
+        },
+        {
+          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/api\\/cloudinary\\/signature(\\.json|\\.rsc|\\.segments\\/.+\\.segment\\.rsc)?[\\/#\\?]?$",
+          "originalSource": "/api/cloudinary/signature"
+        }
+      ],
+      "wasm": [],
+      "assets": [],
+      "env": {
+        "__NEXT_BUILD_ID": "KNOC3_KTWcoHJgnkCOt1K",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "6RHQ2kGUEvn3QvXeC3T48qcf7jYHGGAl7HorFa5W3q4=",
+        "__NEXT_PREVIEW_MODE_ID": "e7c17934f30711e84fbb11bb4800a524",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "4351abe75425bba13e628d88c5551eaf0f9189e3deb38f300a8867764fb1b002",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "f6caa4ae7bb06254c7040a17d048ce8a1cfbd4a444b745eab4251a7d36597906"
+      }
+    }
+  },
+  "functions": {},
+  "sortedMiddleware": [
+    "/"
+  ]
+}

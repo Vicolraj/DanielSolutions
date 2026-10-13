@@ -1,0 +1,16 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/admin/login/route": "app/api/admin/login/route.js",
+  "/api/admin/logout/route": "app/api/admin/logout/route.js",
+  "/api/admin/users/[id]/route": "app/api/admin/users/[id]/route.js",
+  "/api/cloudinary/signature/route": "app/api/cloudinary/signature/route.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/api/health/db/route": "app/api/health/db/route.js",
+  "/[slug]/projects/page": "app/[slug]/projects/page.js",
+  "/[slug]/testimonials/page": "app/[slug]/testimonials/page.js",
+  "/admin/login/page": "app/admin/login/page.js",
+  "/admin/page": "app/admin/page.js",
+  "/[slug]/page": "app/[slug]/page.js",
+  "/page": "app/page.js"
+}
