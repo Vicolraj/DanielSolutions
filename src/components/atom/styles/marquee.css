@@ -1,0 +1,42 @@
+/* ═══════════════════════════════════════
+   MARQUEE
+═══════════════════════════════════════ */
+.marquee-outer{
+  overflow:hidden;
+  border-top:var(--brutal-border);
+  border-bottom:var(--brutal-border);
+  padding:14px 0;
+  background:var(--bg);
+}
+
+.marquee-track{
+  display:flex;
+  width:max-content;
+  animation:marquee-scroll 28s linear infinite;
+}
+
+.marquee-item{
+  font-family:var(--ff-display);
+  font-size:32px;
+  font-weight:900;
+  color:var(--text);
+  letter-spacing:-1px;
+  text-transform:uppercase;
+  padding:0 18px;
+  white-space:nowrap;
+  display:flex;align-items:center;gap:18px;
+}
+
+.marquee-dot{
+  color:var(--rust);
+  opacity:0.6;
+}
+
+@keyframes marquee-scroll{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .marquee-track{animation:none;}
+}
